@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hey Mikey</title>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <main>
+      <div class="darken">
+
+        <div class="header-container">
+          <h1>hey mikey</h1>
+          <p>Photography</p>
+        </div>
+
+        <div class="links-container">
+          <a href="#weddings" class="link">WEDDINGS</a>
+          <a href="#portraits" class="link">PORTRAITS</a>
+          <a href="#landscapes" class="link">LANDSCAPES</a>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+    </main>
+
+    <section id="weddings">
+      <div class="photos">
+        <img id="engagement_1" src="./assets/images/weddings/engagement_1.jpg"/>
+        <img src="./assets/images/weddings/engagement_2.jpg"/>
+        <img src="./assets/images/weddings/engagement_3.jpg"/>
+        <img src="./assets/images/weddings/engagement_4.jpg"/>
+        <img src="./assets/images/weddings/engagement_5.jpg"/>
+
+        <img src="./assets/images/weddings/wedding_1.jpg"/>
+        <img src="./assets/images/weddings/wedding_2.jpg"/>
+        <img src="./assets/images/weddings/wedding_3.jpg"/>
+        <img src="./assets/images/weddings/wedding_4.jpg"/>
+        <img src="./assets/images/weddings/wedding_5.jpg"/>
+      </div>
+      <article>
+        <h2>Weddings</h2>
+        <p>
+          We are lucky to live in a glorious age that gives us everything we could ask for as a human race. What more could you need when you have meat covered in cheese nestled between bread as a complete meal.
+        </p>
+
+        <p>
+          From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to figure out what you want.
+        </p>
+      </article>
+    </section>
+
+    <section id="portraits">
+    </section>
+
+    <section id="landscapes">
+    </section>
+
+    <section id="contact-me">
+    </section>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="engagement_1_modal" src="./assets/images/weddings/engagement_1.jpg"/>
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("engagement_1");
+      var modalImg = document.getElementById("engagement_1_modal");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
