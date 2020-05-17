@@ -35,20 +35,22 @@ main h1 {
   font-size: 6em;
   margin: 0;
 }
+main h1 span { color: #e9e42f; }
 main p {
-  color: #c4e128;
+  color: rgba(255,255,255,0.75);
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   padding-right: 50px;
-  margin-top: -26px;
+  margin-top: -18px;
   text-align: right;
+  font-weight: 700;
 }
 main .links-container {
   display: flex;
   margin-top: 25px;
 }
 main .links-container .link {
-  padding: 20px;
+  padding: 15px;
   margin-left: 5px;
   margin-right: 5px;
   border: 1px solid #CCC;
