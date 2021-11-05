@@ -9,7 +9,6 @@ html {
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background: #1d1d1d;
   color: white;
 }
 
@@ -62,63 +61,19 @@ main .links-container .link {
 main .clearfix { height: 200px; }
 
 /**
- * SECTIONS ###############################################################
+ * ALBUMS ###############################################################
 */
-section {
-  min-height: 90vh;
+.padding-bottom { padding-bottom: 40px; }
+img {
+  max-width: 100vw;
+  margin-top: 40px;
+}
+img.full { max-width: 100vw; }
+
+.framed {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 50px;
   justify-content: space-evenly;
 }
-section .photos {
-  max-width: 800px;
-}
-section article {
-  max-width: 400px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-section .photos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-}
-section article { padding: 50px 50px; }
-section article h2 {
-  font-family: 'Lobster', cursive;
-  font-size 4em;
-}
-section article p {
-  text-align: justify;
-  font-style: italic;
-}
-section img {
-  max-height: 160px;
-  margin: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+.framed img { max-height: 75vh; }
 
-#portraits {
-  flex-direction: row-reverse;
-  color: black;
-  background-color: #eee;
-}
-
-/**
- * SECTIONS ###############################################################
-*/
-footer {
-  height: 50vh;
-  background-color: #5f5f5f;
-  padding: 100px;
-  display: flex;
-}
-footer p {
-  font-size: 1.5em;
-  color: rgba(255,255,255,0.8);
-}
